@@ -16,12 +16,6 @@ RUN useradd -M -s /bin/false --uid 1000 teamspeak3 \
     && mkdir /data \
     && chown teamspeak3:teamspeak3 /data
 
-#RUN wget -O teamspeak3-server_linux-amd64-${TS_VERSION}.tar.gz \
-#    "http://dl.4players.de/ts/releases/${TS_VERSION}/teamspeak3-server_linux-amd64-${TS_VERSION}.tar.gz" \
-#    && tar -xzf teamspeak3-server_linux-amd64-${TS_VERSION}.tar.gz \
-#    && mv teamspeak3-server_linux-amd64 /opt/teamspeak \
-#    && rm teamspeak3-server_linux-amd64-${TS_VERSION}.tar.gz
-
 ADD start-teamspeak3.sh /start-teamspeak3
 
 EXPOSE 9987/udp
