@@ -27,27 +27,24 @@ If you are starting the server for the first time, you need the Admin-Token:
 
 There are two important sections in the logfiles:
 
-```
-------------------------------------------------------------------
-                      I M P O R T A N T                           
-------------------------------------------------------------------
-               Server Query Admin Account created                 
-         loginname= "serveradmin", password= "qyF2d07R"
-------------------------------------------------------------------
-```
+    ------------------------------------------------------------------
+                          I M P O R T A N T                           
+    ------------------------------------------------------------------
+                   Server Query Admin Account created                 
+             loginname= "serveradmin", password= "qyF2d07R"
+    ------------------------------------------------------------------
 
 and:
-```
-------------------------------------------------------------------
-                      I M P O R T A N T                           
-------------------------------------------------------------------
-      ServerAdmin privilege key created, please use it to gain 
-      serveradmin rights for your virtualserver. please
-      also check the doc/privilegekey_guide.txt for details.
 
-       token=P5fO1Cbbv5DbM5kg9xR3LlfpYjlJe6cT9QeMhjY+
-------------------------------------------------------------------
-```
+    ------------------------------------------------------------------
+                          I M P O R T A N T                           
+    ------------------------------------------------------------------
+          ServerAdmin privilege key created, please use it to gain 
+          serveradmin rights for your virtualserver. please
+          also check the doc/privilegekey_guide.txt for details.
+    
+           token=P5fO1Cbbv5DbM5kg9xR3LlfpYjlJe6cT9QeMhjY+
+    ------------------------------------------------------------------
 
 **COPY THEM FOR LATER USE!**
 
