@@ -73,3 +73,4 @@ For example, to use a specific version:
     docker run -d -e TS_VERSION=3.0.10.2 ... --name=ts3-server ...
 
 Note: a list of valid versions is available [here](http://www.server-residenz.com/tools/ts3versions.json) or you may use [ts3version@github](https://github.com/andreasheil/ts3versions) by your self.
+
