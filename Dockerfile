@@ -19,7 +19,7 @@ ADD start-teamspeak3.sh /start-teamspeak3
 EXPOSE 9987/udp 10011 30033
 
 USER teamspeak3
-VOLUME ['/data']
+VOLUME /data
 WORKDIR /data
 CMD ["/start-teamspeak3"]
 
