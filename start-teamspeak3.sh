@@ -18,5 +18,12 @@ fi
 
 export LD_LIBRARY_PATH=/data
 
-exec ./ts3server_linux_amd64
+TS3ARGS=""
+if [ -e /data/ts3server.ini ]; then
+  TS3ARGS="inifile=/data/ts3server.ini"
+else
+  TS3ARGS="createinifile=1"
+fi
+
+exec ./ts3server_linux_amd64 $TS3ARGS
 
