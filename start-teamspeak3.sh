@@ -25,5 +25,5 @@ else
   TS3ARGS="createinifile=1"
 fi
 
-exec ./ts3server_linux_amd64 $TS3ARGS
+exec ./ts3server $TS3ARGS
 
