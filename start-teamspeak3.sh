@@ -8,12 +8,12 @@ esac
 
 cd /data
 
-TARFILE=teamspeak3-server_linux-amd64-${TS_VERSION}.tar.gz
+TARFILE=teamspeak3-server_linux_amd64-${TS_VERSION}.tar.bz2
 
 if [ ! -e ${TARFILE} ]; then
   echo "Downloading ${TARFILE} ..."
   wget -q http://dl.4players.de/ts/releases/${TS_VERSION}/${TARFILE} \
-  && tar -x -f ${TARFILE} --strip-components=1
+  && tar -j -x -f ${TARFILE} --strip-components=1
 fi
 
 export LD_LIBRARY_PATH=/data
@@ -25,5 +25,5 @@ else
   TS3ARGS="createinifile=1"
 fi
 
-exec ./ts3server_linux_amd64 $TS3ARGS
+exec ./ts3server $TS3ARGS
 
