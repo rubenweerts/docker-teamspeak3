@@ -2,7 +2,7 @@
 
 case $TS_VERSION in
   LATEST)
-    export TS_VERSION=`wget -O - https://www.server-residenz.com/tools/ts3versions.json | jsawk -n 'out(this.latest)'`
+    export TS_VERSION=`wget –no-check-certificate -O - https://www.server-residenz.com/tools/ts3versions.json | jsawk -n 'out(this.latest)'`
     ;;
 esac
 
