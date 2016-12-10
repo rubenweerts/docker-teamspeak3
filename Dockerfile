@@ -3,6 +3,7 @@ FROM debian:jessie
 MAINTAINER aheil
 
 ENV TS_VERSION LATEST
+ENV LANG C.UTF-8
 
 RUN apt-get update \
     && DEBIAN_FRONTEND=noninteractive apt-get -y install bzip2 wget ca-certificates python3 \
