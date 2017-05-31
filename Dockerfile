@@ -12,8 +12,8 @@ RUN apt-get update \
     && mkdir /data \
     && chown teamspeak3:teamspeak3 /data
 
-ADD get-version.py /get-version
-ADD start-teamspeak3.sh /start-teamspeak3
+COPY get-version.py /get-version
+COPY start-teamspeak3.sh /start-teamspeak3
 
 EXPOSE 9987/udp 10011 30033
 
