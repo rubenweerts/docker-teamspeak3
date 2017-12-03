@@ -10,7 +10,7 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/* \
     && useradd -M -s /bin/false --uid 1000 teamspeak3 \
     && mkdir /data \
-    && chown teamspeak3:teamspeak3 /data
+    && chown teamspeak3:teamspeak3 /data \
     && cp /data/redist/libmariadb.so.2 /data/
 
 COPY get-version.sh /get-version
