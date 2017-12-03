@@ -11,6 +11,7 @@ RUN apt-get update \
     && useradd -M -s /bin/false --uid 1000 teamspeak3 \
     && mkdir /data \
     && chown teamspeak3:teamspeak3 /data
+    && cp /data/redist/libmariadb.so.2 /data/
 
 COPY get-version.sh /get-version
 COPY start-teamspeak3.sh /start-teamspeak3
